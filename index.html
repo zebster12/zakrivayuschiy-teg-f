@@ -550,11 +550,7 @@
     </main>
 
     <footer class="footer">
-      <button
-        popovertarget="modal"
-        popovertargetaction="show"
-        class="footer__btn"
-      >
+      <button onclick="window['modal'].showModal()" class="footer__btn">
         <svg class="disket-icon" width="28" height="28">
           <use xlink:href="./svg/floppy.svg#disket-icon" />
         </svg>
@@ -571,14 +567,7 @@
             >Вставьте дискету, чтобы продолжить</span
           >
         </div>
-        <button
-          popovertarget="modal"
-          popovertargetaction="hide"
-          class="modal__btn"
-          
-        >
-          Ок
-        </button>
+        <button onclick="window['modal'].close()" class="modal__btn">Ок</button>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>

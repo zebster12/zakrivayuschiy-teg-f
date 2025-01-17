@@ -114,7 +114,6 @@ button::before {
 }
 
 .card__image-blur {
-  -webkit-backdrop-filter: blur(5px);
   filter: blur(5px);
 }
 
@@ -198,7 +197,6 @@ button::before {
 .card__like-button {
   display: block;
   max-width: 130px;
-  border: none;
   border: 2px solid #000000;
   padding: 7px 35px;
   color: #fff;

@@ -4,9 +4,7 @@
   font-family: "Inter-Variable";
   src: url("path/YourVariableFont.woff2") format('woff2 supports variations'),
         url("path/YourVariableFont.woff2") format('woff2-variations');
-  font-weight: normal;
   font-style: normal;
-  font-variation-settings: "wght" 400, "wght" 785;
 }
 
 @font-face {
