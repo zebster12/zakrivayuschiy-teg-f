@@ -173,7 +173,6 @@ button::before {
 
 .card__paragraph {
   color: #000000;
-  font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
   font-size: 18px;
   line-height: 21px;
   font-variation-settings: var(--text-card-size);
@@ -205,12 +204,6 @@ button::before {
   color: #fff;
   background-color: #fff;
   animation: all 0.3s ease;
-}
-
-.button__text {
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
 }
 
 .button__text {
