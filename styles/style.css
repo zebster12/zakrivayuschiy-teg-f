@@ -90,7 +90,7 @@ button::before {
   font-family: var(--font-base), sans-serif;
   font-size: 18px;
   line-height: 22px;
-  font-variation-settings: var(--title-card-size);
+  font-variation-settings: 'wght' var(--title-card-size);
 }
 
 .card__box-image {
@@ -153,6 +153,8 @@ button::before {
   text-transform: uppercase;
 }
 
+
+
 @supports not (text-stroke: 1px #fff) {
   .label {
     text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
@@ -166,9 +168,9 @@ button::before {
 
 .card__paragraph {
   color: #000000;
-  font-size: clamp(1.125rem, 1.125rem + 0vi, 1.125rem);
+  font-size: 18px;
   line-height: 21px;
-  font-variation-settings: var(--text-card-size);
+  font-variation-settings: 'wght' var(--text-card-size);
 }
 
 .card__paragraph:not(:last-child) {

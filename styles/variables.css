@@ -2,7 +2,7 @@
 :root {
   --font-base: "Inter-Variable";
   --font-accent: "PressStart2P-Regular";
-  --title-card-size:  785;
+  --title-card-size:785;
   --text-card-size:400;
   --bg-gradient: repeating-linear-gradient(
       to bottom,
