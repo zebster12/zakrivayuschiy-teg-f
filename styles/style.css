@@ -67,7 +67,6 @@ button::before {
 
 .header__subtitle {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-
   text-transform: uppercase;
 }
 
@@ -172,7 +171,7 @@ button::before {
 
 .card__paragraph {
   color: #000000;
-  font-size: 18px;
+  font-size: clamp(1.125rem, 1.125rem + 0vi, 1.125rem);
   line-height: 21px;
   font-variation-settings: var(--text-card-size);
 }
@@ -194,11 +193,16 @@ button::before {
   background-color: #fff;
 }
 
+.disket-icon {
+  width: 28px;
+  height: 28px;
+}
+
 .card__like-button {
   display: block;
-  max-width: 130px;
+  min-width: 130px;
   border: 2px solid #000000;
-  padding: 7px 35px;
+  padding: 7px;
   color: #fff;
   background-color: #fff;
   animation: all 0.3s ease;
@@ -227,7 +231,10 @@ button::before {
   gap: 8px;
   margin: 0 auto;
   border: 2px solid #000;
-  padding: 15px 9.5px 15px 18.5px;
+  padding-block-start: 15px;
+  padding-block-end: 15px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
   text-align: center;
 }
 
@@ -282,8 +289,11 @@ button:focus-visible:not(.card__icon-button) {
 }
 
 .card__icon-button:focus-visible {
-  height: 38px;
   outline: 2px solid #000;
+}
+
+.disket-icon21 {
+  display: none;
 }
 
 @media (width>=1440px) {
@@ -296,9 +306,12 @@ button:focus-visible:not(.card__icon-button) {
     padding-bottom: 25px;
   }
 
-  #disket-icon {
-    width: 21px;
-    height: 21px;
+  .disket-icon {
+    display: none;
+  }
+
+  .disket-icon21 {
+    display: block;
   }
 
   .modal {

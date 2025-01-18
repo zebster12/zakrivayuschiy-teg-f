@@ -2,15 +2,14 @@
 
 @font-face {
   font-family: "Inter-Variable";
-  src: url("path/YourVariableFont.woff2") format('woff2 supports variations'),
-        url("path/YourVariableFont.woff2") format('woff2-variations');
+  src: url("./Inter-Variable.woff2") format('woff2 supports variations'),
+        url("./Inter-Variable.woff2") format('woff2-variations');
   font-style: normal;
-  font-variation-settings: "wght" 400, "wght" 785;
+  font-weight:400 785;
 }
 
 @font-face {
   font-family: "PressStart2P-Regular";
-  src: url(./PressStart2P-Regular.woff) format(woff);
-  font-weight: 400;
+  src: url(./PressStart2P-Regular.woff) format('woff');
   font-style: normal;
 }
