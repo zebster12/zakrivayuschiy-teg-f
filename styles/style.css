@@ -22,7 +22,7 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: var(--title-card-size);
+  font-variation-settings: "wght" var(--title-card-size);
   block-size: 100vh;
   inline-size: 100%;
 }
@@ -153,12 +153,7 @@ button::before {
   text-transform: uppercase;
 }
 
-@supports (
-  text-shadow: -1px -1px 0 #ffffff,
-  1px -1px 0 #ffffff,
-  -1px 1px 0 #ffffff,
-  1px 1px 0 #ffffff
-) {
+@supports not (text-stroke: 1px #fff) {
   .label {
     text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
       1px 1px 0 #ffffff;
@@ -192,8 +187,6 @@ button::before {
   padding: 0;
   background-color: #fff;
 }
-
-
 
 .card__like-button {
   display: block;
@@ -289,7 +282,6 @@ button:focus-visible:not(.card__icon-button) {
   outline: 2px solid #000;
 }
 
-
 @media (width>=1440px) {
   .header {
     padding: 128px 13px;
@@ -300,8 +292,6 @@ button:focus-visible:not(.card__icon-button) {
     padding-bottom: 25px;
   }
 
- 
-
   .modal {
     position: fixed;
     min-width: 353px;
@@ -309,11 +299,10 @@ button:focus-visible:not(.card__icon-button) {
     background-color: #fff;
   }
 
-  .disket-icon{
+  .disket-icon {
     width: 21px;
     height: 21px;
   }
-
 
   .modal .disket-icon {
     width: 39px;
