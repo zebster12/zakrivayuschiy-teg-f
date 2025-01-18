@@ -193,10 +193,7 @@ button::before {
   background-color: #fff;
 }
 
-.disket-icon {
-  width: 28px;
-  height: 28px;
-}
+
 
 .card__like-button {
   display: block;
@@ -292,9 +289,6 @@ button:focus-visible:not(.card__icon-button) {
   outline: 2px solid #000;
 }
 
-.disket-icon21 {
-  display: none;
-}
 
 @media (width>=1440px) {
   .header {
@@ -306,13 +300,7 @@ button:focus-visible:not(.card__icon-button) {
     padding-bottom: 25px;
   }
 
-  .disket-icon {
-    display: none;
-  }
-
-  .disket-icon21 {
-    display: block;
-  }
+ 
 
   .modal {
     position: fixed;
@@ -321,6 +309,16 @@ button:focus-visible:not(.card__icon-button) {
     background-color: #fff;
   }
 
+  .disket-icon{
+    width: 21px;
+    height: 21px;
+  }
+
+
+  .modal .disket-icon {
+    width: 39px;
+    height: 39px;
+  }
   .footer__btn {
     flex-direction: row;
     min-width: 335px;

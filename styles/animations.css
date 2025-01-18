@@ -53,12 +53,9 @@ button:not(.card__icon-button):hover::before {
   animation: opacity 0.3s 0.3s forwards;
 }
 
-
-.heart .is-liked{
-  animation: scale 0.1s 0.3s forwards;
+.like-icon.is-liked .heart {
+  animation: scale 0.1s 0.3s ease-in ;
 }
-
-
 
 @keyframes opacity {
   from {
@@ -70,9 +67,11 @@ button:not(.card__icon-button):hover::before {
 }
 
 @keyframes scale {
-  from{
-    scale:1;
-  }to{
-    scale:1.25;
+  from {
+    transform: scale(1) translate(0, 0);
+    
+  }
+  to {
+    transform: scale(1.25) translate(-10%, -10%);
   }
 }
