@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   --font-base: "Inter-Variable";
-  --font-accent: "PressStart2P-Regular";
+  --font-accent: "PressStart2P";
   --title-card-size:785;
   --text-card-size:400;
   --bg-gradient: repeating-linear-gradient(
@@ -21,5 +21,5 @@
     repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
   --text-shadow-color: #ffffff;
   --color-base: #000;
-  --fill: #000;
+  --fill-counter: #000;
 }

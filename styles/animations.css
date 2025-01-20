@@ -1,51 +1,62 @@
-/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-*/
-
-button:not(.card__icon-button):hover::before {
+.button:hover::before {
   transform: translateX(0);
 }
 
 .like-icon {
-  transition: fill 0.3s 0.03s;
+  transition-timing-function: linear;
 }
 
-.like-icon .main-body,
+.like-icon .contour {
+  fill: black;
+  transition: fill 0.01s;
+}
+
 .like-icon .core {
   transition: fill 0.3s;
+  transition-delay: 0.03s;
 }
 
-.like-icon:hover .main-body,
+.like-icon .main-body {
+  transition: fill 0.3s;
+  transition-delay: 0s;
+}
+
 .like-icon:hover .core {
   fill: black;
-  transition: fill 0.3s 0.03s;
+  transition-delay: 0s;
 }
 
-.like-icon:active .main-body,
+.like-icon:hover .main-body {
+  fill: black;
+  transition-delay: 0.05s;
+}
+
+.like-icon:active .main-body{
+  fill: red;
+  transition: fill 0.3s;
+  transition-delay: 0.05s;
+}
+
 .like-icon:active .core {
   fill: red;
+  transition: fill 0.3s;
 }
 
 .like-icon.is-liked .contour {
   fill: red;
+  transition: fill 0.3s;
+  transition-delay: 0.06s;
 }
 
 .like-icon.is-liked .main-body {
   fill: red;
   transition: fill 0.3s;
+  transition-delay: 0.05s;
 }
 
 .like-icon.is-liked .core {
   fill: red;
-  transition: fill 0.5s;
+  transition: fill 0.3s;
 }
 
 .like-icon.is-liked .sparks {
@@ -54,8 +65,10 @@ button:not(.card__icon-button):hover::before {
 }
 
 .like-icon.is-liked .heart {
-  animation: scale 0.1s 0.3s ease-in ;
+  animation: scale 0.3s 0.1s ease-in;
 }
+
+
 
 @keyframes opacity {
   from {
@@ -69,7 +82,6 @@ button:not(.card__icon-button):hover::before {
 @keyframes scale {
   from {
     transform: scale(1) translate(0, 0);
-    
   }
   to {
     transform: scale(1.25) translate(-10%, -10%);
