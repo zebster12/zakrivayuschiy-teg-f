@@ -193,6 +193,8 @@ button {
   border: none;
   padding: 0;
   background-color: #fff;
+  outline-color: transparent;
+  transition: outline-color 0.3s ease;
 }
 
 .button__text {
@@ -260,11 +262,6 @@ button:focus {
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 #000;
-}
-
-.card__icon-button {
-  outline-color: transparent;
-  transition: outline-color 0.3s ease;
 }
 
 .card__icon-button:focus-visible {

@@ -31,7 +31,7 @@
   transition-delay: 0.05s;
 }
 
-.like-icon:active .main-body{
+.like-icon:active .main-body {
   fill: red;
   transition: fill 0.3s;
   transition-delay: 0.05s;
@@ -67,8 +67,6 @@
 .like-icon.is-liked .heart {
   animation: scale 0.3s 0.1s ease-in;
 }
-
-
 
 @keyframes opacity {
   from {
