@@ -274,7 +274,8 @@ button:focus {
   }
 
   .header {
-    padding: 128px 13px;
+    padding-block-start: 128px;
+    padding-block-end: 128px;
   }
 
   .cards__list {
@@ -290,10 +291,8 @@ button:focus {
   }
 
   .modal {
-    position: fixed;
     min-width: 353px;
-    padding: 30px 30px;
-    background-color: #fff;
+    padding: 30px 28px;
   }
 
   .label {
