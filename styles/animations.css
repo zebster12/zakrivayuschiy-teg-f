@@ -2,22 +2,18 @@
   transform: translateX(0);
 }
 
-.like-icon {
-  transition-timing-function: linear;
-}
-
 .like-icon .contour {
   fill: black;
-  transition: fill 0.01s;
+  transition: fill 0.01s linear;
 }
 
 .like-icon .core {
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
   transition-delay: 0.03s;
 }
 
 .like-icon .main-body {
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
   transition-delay: 0s;
 }
 
@@ -33,7 +29,7 @@
 
 .like-icon:active .main-body {
   fill: red;
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
   transition-delay: 0.05s;
 }
 
@@ -44,13 +40,13 @@
 
 .like-icon.is-liked .contour {
   fill: red;
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
   transition-delay: 0.06s;
 }
 
 .like-icon.is-liked .main-body {
   fill: red;
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
   transition-delay: 0.05s;
 }
 
@@ -61,7 +57,7 @@
 
 .like-icon.is-liked .sparks {
   fill: red;
-  animation: opacity 0.3s 0.3s forwards;
+  animation: opacity 0.3s 0.3s ease-in forwards;
 }
 
 .like-icon.is-liked .heart {
