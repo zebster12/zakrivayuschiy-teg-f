@@ -143,17 +143,19 @@ button {
   font-style: normal;
   line-height: 14px;
   mix-blend-mode: hard-light;
-  -webkit-text-stroke: 0.1px #fff;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
 }
 
 .label-size_big {
   text-transform: uppercase;
 }
 
-@supports not (text-stroke: 0.1px #fff) {
+@supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
   .label {
-    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
-      1px 1px 0 #ffffff;
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+    text-shadow: none;
   }
 }
 
@@ -220,9 +222,9 @@ button {
 
 .modal {
   position: fixed;
-  top: 19%;
-  padding: 30px 42px;
+  padding: 30px 39px;
   background-color: #fff;
+  min-width: 341px;
 }
 
 .modal__btn {
@@ -287,7 +289,6 @@ button:focus {
   .modal {
     min-width: 353px;
     padding: 30px;
-    top: 24%;
   }
 
   .modal__text {
